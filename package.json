@@ -1,0 +1,16 @@
+{
+  "name": "gh-contrib-widget",
+  "version": "1.0.0",
+  "description": "Simple widget that shows your last contribution to public opensource projects.",
+  "main": "src/index.js",
+  "scripts": {
+    "build": "webpack"
+  },
+  "keywords": [],
+  "author": "Alexander Gor",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10"
+  }
+}

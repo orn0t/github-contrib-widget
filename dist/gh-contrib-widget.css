@@ -1,0 +1,19 @@
+.gh-contrib-widget { width: 640px; margin: 10px auto; border-radius: 5px; overflow: hidden; border: 1px solid lightgray; font-family: Helvetica; }
+.gh-contrib-widget .row {border-bottom: 1px solid lightgray; color: #586069;}
+.gh-contrib-widget .row:last-child { border: none; }
+.gh-contrib-widget .head { padding: 12px; clear: both; background-color: #f6f8fa; border-bottom: 1px solid lightgray;}
+.gh-contrib-widget .head a { font-size: 16px; font-weight: 600; color: #24292e;}
+.gh-contrib-widget .head .pic { height: 24px; width: 24px; float: left; margin: -4px 10px 0 0;}
+.gh-contrib-widget .stars { float: right; font-size: 12px; padding: 3px 0;}
+.gh-contrib-widget .stars i { padding: 0 5px}
+.gh-contrib-widget .short { margin: 0; font-size: 12px; padding-top: 8px; }
+.gh-contrib-widget .row .detail .pr { margin: 12px; border-bottom: 1px solid #f6f8fa; font-size: 12px; padding-bottom: 12px}
+.gh-contrib-widget .row .detail .pr:first-child { margin-top: 12px;}
+.gh-contrib-widget .row .detail .pr a { color: #333;}
+.gh-contrib-widget .row .detail .pr:last-child { border: none; margin-bottom: 0;}
+.gh-contrib-widget .row .detail .pr .state { border: 1px solid #586069; border-radius: 3px; padding: 1px 3px; margin-right: 10px; font-size: 12px;}
+.gh-contrib-widget .row .detail .pr .state.merged { border-color: #6f42c1; color: #6f42c1; }
+.gh-contrib-widget .row .detail .pr .state.open { border-color: #28a745; color: #28a745; }
+.gh-contrib-widget.empty { text-align: center; background-color: #f6f8fa; color: #586069; }
+.gh-contrib-widget.empty i { font-size: 48px; }
+.gh-contrib-widget.empty a { color: #586069; text-decoration: none;}

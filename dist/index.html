@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/orn0t/gh-contrib-widget@1.0/dist/gh-contrib-widget.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.16.2/build/styles/default.min.css">
+    <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.16.2/build/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="https://cdn.jsdelivr.net/gh/orn0t/gh-contrib-widget@1.0/dist/gh-contrib-widget.min.js"></script>
+    <style>
+      #get-widget-form {width: 680px; margin: 50px auto; font-family: Helvetica}
+      #get-widget-form p { font-size: 16px; line-height: 1.7}
+      #try-it {font-size: 24px; color: #24292e; line-height: 40px; text-align: center;}
+      #try-it input, button { padding: 0 10px; font-size: 18px; line-height: 40px; border: 1px solid lightgray; border-radius: 4px;}
+      #try-it button {cursor: pointer; background-color: #f6f8fa; }
+      #testWidget { margin-bottom: 200px; }
+    </style>
+</head>
+<body>
+  <div id="get-widget-form">
+    <h2>Github contribution list widget</h2>
+    <p>
+        Simple widget that shows your last contribution to public opensource projects. <br/>
+        Only things you made to other folks stuff are shown. Your own projects will be filtered out. <br/>
+    </p>
+    <pre>
+      <code class="html">
+&lt;!-- Add Styles and JS resorcer to your page --&gt;
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css&quot;/&gt;
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://cdn.jsdelivr.net/gh/orn0t/gh-contrib-widget@1.0/dist/gh-contrib-widget.min.css&quot;/&gt;
+&lt;script src=&quot;https://cdn.jsdelivr.net/gh/orn0t/gh-contrib-widget@1.0/dist/gh-contrib-widget.min.js&quot;&gt;&lt;/script&gt;
+
+&lt;!-- Add empty placeholder where you need widget to be shown --&gt;
+&lt;div id=&quot;my-gh-widget&quot;&gt;&lt;/div&gt;
+
+&lt;!-- Init the widget in your js script --&gt;
+&lt;script&gt;
+  GhContribWidget.init(&quot;my-gh-widget&quot;, &lt;Your_Github_login&gt;, &lt;Your_Github_API_key&gt;);
+&lt;/script&gt;
+      </code>
+    </pre>
+
+    <div id="try-it">
+      Enter your Github name: <input id="widgetUsername" type="text" name="username" placeholder="orn0t"/>
+      <button id="getWidget" onclick="updateWidget()">Try widget!</button>
+    </div>
+  </div>
+  <div id="testWidget"></div>
+</body>
+<script>
+  GhContribWidget.init("testWidget", "orn0t", "14be6207e4f98fd22d0717e76a8f956c67e941ae");
+
+  function updateWidget() {
+    let user = document.getElementById("widgetUsername").value
+
+    GhContribWidget.init("testWidget", user, "14be6207e4f98fd22d0717e76a8f956c67e941ae");
+  }
+</script>
+</html>
