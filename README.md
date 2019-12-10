@@ -1,4 +1,7 @@
 # gh-contrib-widget
+
+TL;DR; Try it here - http://alexandergor.com/gh-contrib-widget
+
 Simple widget that shows your last contribution to public open-source projects.
 Only things you made to other folks stuff are shown. Your own projects will be filtered out.
 
