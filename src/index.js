@@ -139,6 +139,12 @@ module.exports = {
             <p>But it's never late to make some!</p>
           `
       }
+      copy = document.createElement('a')
+      copy.setAttribute('href', "http://alexandergor.com/gh-contrib-widget")
+      copy.setAttribute('style', "width: inherit; position: absolute; font-size:10px; margin:2px -5px; color:lightgray; text-align:right;")
+      copy.text = "widget by Alexander Gor"
+
+      wrapper.appendChild(copy)
     })();
   }
 };
